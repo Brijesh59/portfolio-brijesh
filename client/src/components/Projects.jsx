@@ -6,7 +6,7 @@ import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import GithubCard from "./GithubCard";
 import ProjectCard from "./ProjectCard";
-
+import Loader from './Loader'
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
@@ -131,6 +131,7 @@ export default function Projects() {
         )}
         {value === 1 && (
           <TabContainer style={{ zIndex: -1 }} className={classes.fadeScroll}>
+            <Loader />
             <GithubCard />
           </TabContainer>
         )}
