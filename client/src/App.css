@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  background: #F7F9FA;
+}
+
+body{
+  background: #F7F9FA;
+  overflow-y: scroll
+}
+a{
+  text-decoration: none;
+  color:#4E4E4E;
 }
 
 .App-logo {
